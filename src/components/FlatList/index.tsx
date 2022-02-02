@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import { movie } from '~/types/movie';
+import { TMovie } from '~/types/TMovie';
 import { CardMovie } from '../CardMovie';
 
 import { Wrapper } from './styles';
 
 type TFlatList = {
-  listMovies: movie[];
+  listMovies: TMovie[];
 };
 
 export const FlatList: FC<TFlatList> = ({ listMovies }): JSX.Element => {
@@ -14,6 +14,7 @@ export const FlatList: FC<TFlatList> = ({ listMovies }): JSX.Element => {
       data={listMovies}
       renderItem={({ item }: any) => <CardMovie itemMovie={item} />}
       keyExtractor={(item: any) => item.id}
+      horizontal={true}
     />
   );
 };
