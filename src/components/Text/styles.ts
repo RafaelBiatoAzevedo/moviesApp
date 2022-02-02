@@ -13,6 +13,7 @@ type TStyledText = {
 export const StyledText = styled.Text<TStyledText>`
   color: ${(p) => p.theme.colors[p.color]};
   font-size: ${(p) => p.theme.fontSizes[p.size]}px;
+  font-family: 'Helvetica';
   font-weight: ${(p) => p.weight};
   text-align: ${(p) => p.align};
   padding: ${(p) => p.theme.responsive.wp(p.paddingY)}px

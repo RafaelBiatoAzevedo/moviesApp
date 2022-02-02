@@ -6,7 +6,7 @@ import { Wrapper } from './styles';
 export const Home: FC = () => {
   return (
     <Wrapper>
-      <Text color="primary" align="center" size="largeMedium" paddingY="2%">
+      <Text color="primary" align="center" size="veryLarge" paddingY="2%">
         MoviesApp
       </Text>
     </Wrapper>

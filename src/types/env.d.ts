@@ -1,3 +1,5 @@
 declare module '@env' {
-  export const REACT_NATIVE_APP_API_URI: string;
+  export const API_KEY: string;
+  export const API_URI: string;
+  export const TOKEN: string;
 }
