@@ -1,4 +1,4 @@
-export type genre = {
+export type TGenre = {
   id: number;
   name: string;
 };

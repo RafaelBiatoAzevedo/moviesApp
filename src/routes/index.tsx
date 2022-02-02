@@ -2,11 +2,11 @@ import React, { FC } from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { rootStackParamList } from '~/types/rootStackParamList';
+import { TRootStackParamList } from '~/types/TRootStackParamList';
 
 import { Home } from '~/screens/Home';
 
-const Stack = createNativeStackNavigator<rootStackParamList>();
+const Stack = createNativeStackNavigator<TRootStackParamList>();
 
 export const Routes: FC = () => {
   return (
