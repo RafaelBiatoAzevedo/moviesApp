@@ -6,7 +6,6 @@ import { Wrapper } from './styles';
 
 interface IButton {
   title?: string | JSX.Element;
-  subtitle?: string | JSX.Element;
   onPress: any;
   fontColor?: ColorScheme;
   fontSize?: FontsSizesScheme;
@@ -49,7 +48,7 @@ export const Button: FC<IButton> = ({
   flexDirection = 'row',
   paddingY = '0%',
   paddingX = '0%',
-}) => {
+}): JSX.Element => {
   return (
     <Wrapper
       flexDirection={flexDirection}

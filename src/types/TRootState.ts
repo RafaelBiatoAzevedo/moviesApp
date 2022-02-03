@@ -8,4 +8,5 @@ export type TMoviesState = {
 };
 export type TRootState = {
   movies: TMoviesState;
+  movie: TMovie;
 };
