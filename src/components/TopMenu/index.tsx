@@ -24,7 +24,7 @@ export const TopMenu: FC = (): JSX.Element => {
           <IconList
             name="list"
             color={colors.primary}
-            size={responsive.wp('7%')}
+            size={responsive.wp('8%')}
           />
         }
       />

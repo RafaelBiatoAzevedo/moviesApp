@@ -20,7 +20,7 @@ export const Text: FC<TText> = ({
   align = 'left',
   paddingY = '0%',
   paddingX = '0%',
-}) => {
+}): JSX.Element => {
   return (
     <StyledText
       allowFontScaling={false}

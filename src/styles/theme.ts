@@ -5,16 +5,20 @@ import {
 
 export const theme = {
   colors: {
-    primary: '#F9C210',
+    primary: '#ffffff',
     secondary: '#000000',
 
     backgroungColor: '#000000',
+
+    warning: '#ffc107',
+    danger: '#dc3545',
 
     textPattern: '#000000',
   },
 
   fontSizes: {
     small: widthPercentageToDP('2.8%'),
+    smallMedium: widthPercentageToDP('3.2%'),
     medium: widthPercentageToDP('4%'),
     large: widthPercentageToDP('5%'),
     largeMedium: widthPercentageToDP('5.8%'),

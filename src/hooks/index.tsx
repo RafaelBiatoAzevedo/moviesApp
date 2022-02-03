@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '~/styles/theme';
 import { store } from '~/redux/store';
 
-export const AppProvider: FC = ({ children }) => {
+export const AppProvider: FC = ({ children }): JSX.Element => {
   return (
     <Provider store={store}>
       <NavigationContainer>

@@ -19,3 +19,12 @@ export const saveUpcomingMovies = (movies: TMovie[]) => ({
   type: 'SAVE_UPCOMING_MOVIES',
   movies,
 });
+
+export const addMovieSlected = (movie: TMovie) => ({
+  type: 'ADD_MOVIE_SELECTED',
+  movie,
+});
+
+export const removeMovieSlected = () => ({
+  type: 'REMOVE_MOVIE_SELECTED',
+});
