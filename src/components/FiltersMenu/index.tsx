@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
 import DropDownPicker, { ValueType } from 'react-native-dropdown-picker';
 
 DropDownPicker.addTranslation('BR', {
@@ -18,38 +19,39 @@ import {
   setVoteAverageFilter,
 } from '~/redux/actions';
 import { TRootState } from '~/types/TRootState';
+import { useTheme } from 'styled-components';
 
 import { Text } from '../Text';
 import { Button } from '../Button';
+
 import {
   Wrapper,
   WrapperDropDown,
   WrapperSort,
   WrapperButtons,
 } from './styles';
-import { useTheme } from 'styled-components';
 
 export const FiltersMenu: FC = (): JSX.Element => {
   const dispatch = useDispatch();
   const { colors } = useTheme();
   const genres = useSelector((state: TRootState) => state.genres);
   const filters = useSelector((state: TRootState) => state.filters);
+
   const [openDropGenre, setOpenDropGenre] = useState(false);
   const [valueGenres, setValueGenres] = useState<ValueType[] | null>(
     filters.genres
   );
-
   const [itemsGenres, setItemsGenres] = useState(
     genres.map((genre) => ({
       label: genre.name,
       value: genre.name,
     }))
   );
+
   const [openDropYear, setOpenDropYear] = useState(false);
   const [valueYears, setValueYears] = useState<ValueType[] | null>(
     filters.releaseYears
   );
-
   const [itemsYears, setItemsYears] = useState(() => {
     let years = [];
     for (let i = 1888; i <= new Date().getFullYear(); i += 1) {

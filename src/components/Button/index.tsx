@@ -5,18 +5,15 @@ import { Text } from '../Text';
 import { Wrapper } from './styles';
 
 interface IButton {
-  title?: string | JSX.Element;
-  onPress: any;
+  backgroundColor?: string;
+  flex?: number;
+  flexDirection?: string;
+
   fontColor?: ColorScheme;
   fontSize?: FontsSizesScheme;
   fontWeight?: string;
-  width?: string;
+
   icon?: JSX.Element;
-  isRotate?: boolean;
-  flex?: number;
-  backgroundColor?: string;
-  withBorder?: boolean;
-  flexDirection?: string;
 
   mLeft?: string;
   mRight?: string;
@@ -26,8 +23,15 @@ interface IButton {
   mX?: string;
   m?: string;
 
+  onPress: any;
+
   paddingX?: string;
   paddingY?: string;
+
+  title?: string | JSX.Element;
+
+  width?: string;
+  withBorder?: boolean;
 }
 
 export const Button: FC<IButton> = ({

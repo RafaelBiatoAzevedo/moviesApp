@@ -1,9 +1,12 @@
 import React, { FC } from 'react';
+
 import { getUriImage } from '~/services/image';
+
 import { TMovie } from '~/types/TMovie';
 import { Text } from '../Text';
 
 import { Wrapper, Image } from './styles';
+
 type TCardMovie = {
   itemMovie: TMovie;
   onPress: () => void;
