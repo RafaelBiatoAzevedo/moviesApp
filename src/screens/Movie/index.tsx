@@ -12,7 +12,6 @@ import {
   WrapperButton,
   WrapperInfo,
   WrapperTopInfo,
-  WrapperLink,
   WrapperRanking,
 } from './styles';
 import IconBack from 'react-native-vector-icons/Ionicons';

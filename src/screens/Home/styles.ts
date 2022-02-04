@@ -7,3 +7,7 @@ export const Wrapper = styled.View`
   background-color: ${(p) => p.theme.colors.backgroungColor};
   padding: 0 ${(p) => p.theme.responsive.wp('2%')}px;
 `;
+
+export const Loading = styled.ActivityIndicator`
+  height: ${(p) => p.theme.responsive.wp('30%')}px;
+`;

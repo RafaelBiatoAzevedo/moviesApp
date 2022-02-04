@@ -1,22 +1,31 @@
+import { TGenre } from '~/types/TGenre';
 import { TMovie } from '~/types/TMovie';
 
-export const savePopularMovies = (movies: TMovie[]) => ({
-  type: 'SAVE_POPULAR_MOVIES',
+import { ValueType } from 'react-native-dropdown-picker';
+import { TMoviesState } from '~/types/TRootState';
+
+export const saveMovies = (movies: TMoviesState) => ({
+  type: 'SAVE_MOVIES',
   movies,
 });
 
-export const saveTopRatedMovies = (movies: TMovie[]) => ({
-  type: 'SAVE_TOP_RATED_MOVIES',
+export const addPopularMovies = (movies: TMovie[]) => ({
+  type: 'ADD_POPULAR_MOVIES',
   movies,
 });
 
-export const saveNowPlayingMovies = (movies: TMovie[]) => ({
-  type: 'SAVE_NOW_PLAYING_MOVIES',
+export const addTopRatedMovies = (movies: TMovie[]) => ({
+  type: 'ADD_TOP_RATED_MOVIES',
   movies,
 });
 
-export const saveUpcomingMovies = (movies: TMovie[]) => ({
-  type: 'SAVE_UPCOMING_MOVIES',
+export const addNowPlayingMovies = (movies: TMovie[]) => ({
+  type: 'ADD_NOW_PLAYING_MOVIES',
+  movies,
+});
+
+export const addUpcomingMovies = (movies: TMovie[]) => ({
+  type: 'ADD_UPCOMING_MOVIES',
   movies,
 });
 
@@ -27,4 +36,33 @@ export const addMovieSlected = (movie: TMovie) => ({
 
 export const removeMovieSlected = () => ({
   type: 'REMOVE_MOVIE_SELECTED',
+});
+
+export const saveGenres = (genres: TGenre[]) => ({
+  type: 'SAVE_GENRES',
+  genres,
+});
+
+export const setTitleFilter = (title: string) => ({
+  type: 'SET_TITLE_FILTER',
+  title,
+});
+
+export const setGenresFilter = (genres: ValueType[] | null) => ({
+  type: 'SET_GENRES_FILTER',
+  genres,
+});
+
+export const setReleaseYearsFilter = (years: ValueType[] | null) => ({
+  type: 'SET_RELEASE_YEARS_FILTER',
+  years,
+});
+
+export const setVoteAverageFilter = (sort: string) => ({
+  type: 'SET_VOTE_AVERAGE_FILTER',
+  sort,
+});
+
+export const resetFilters = () => ({
+  type: 'RESET_FILTERS',
 });

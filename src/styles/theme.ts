@@ -6,8 +6,9 @@ import {
 export const theme = {
   colors: {
     primary: '#ffffff',
-    secondary: '#000000',
+    secondary: 'red',
 
+    transparent: 'transaparent',
     backgroungColor: '#000000',
 
     warning: '#ffc107',
