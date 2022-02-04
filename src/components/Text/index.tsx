@@ -1,25 +1,26 @@
 import React, { FC } from 'react';
 
-import { StyledText } from './styles';
 import { ColorScheme, FontsSizesScheme } from 'styled-components';
 
+import { StyledText } from './styles';
+
 export type TText = {
-  weight?: string;
-  color?: ColorScheme;
-  size?: FontsSizesScheme;
   align?: string;
+  color?: ColorScheme;
   paddingY?: string;
   paddingX?: string;
+  size?: FontsSizesScheme;
+  weight?: string;
 };
 
 export const Text: FC<TText> = ({
   children,
-  weight = '400',
-  color = 'textPattern',
-  size = 'small',
   align = 'left',
+  color = 'textPattern',
   paddingY = '0%',
   paddingX = '0%',
+  size = 'small',
+  weight = '400',
 }): JSX.Element => {
   return (
     <StyledText

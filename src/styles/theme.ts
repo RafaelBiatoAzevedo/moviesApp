@@ -5,16 +5,16 @@ import {
 
 export const theme = {
   colors: {
-    primary: '#ffffff',
+    primary: '#fff',
     secondary: 'red',
 
     transparent: 'transaparent',
-    backgroungColor: '#000000',
+    backgroungColor: '#000',
 
     warning: '#ffc107',
     danger: '#dc3545',
 
-    textPattern: '#000000',
+    textPattern: '#000',
   },
 
   fontSizes: {
