@@ -21,6 +21,7 @@ export type TMovie = {
   title: string;
   video: boolean;
   vote_average: number;
+  vote_count: number;
   homepage: string;
   imdb_id: string;
   production_companies: TCompany[];

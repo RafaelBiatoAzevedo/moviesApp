@@ -10,33 +10,33 @@ export const getMovieDetails = async (movieId: number): Promise<TMovie> => {
   return response.data;
 };
 
-export const getPopularMovies = async (): Promise<TMovie[]> => {
+export const getPopularMovies = async (page: number): Promise<TMovie[]> => {
   const response = await api.get(
-    `/movie/popular?api_key=${API_KEY}&language=pt-BR`
+    `/movie/popular?api_key=${API_KEY}&language=pt-BR&page=${page}`
   );
 
   return response.data.results;
 };
 
-export const getTopRatedMovies = async (): Promise<TMovie[]> => {
+export const getTopRatedMovies = async (page: number): Promise<TMovie[]> => {
   const response = await api.get(
-    `/movie/top_rated?api_key=${API_KEY}&language=pt-BR`
+    `/movie/top_rated?api_key=${API_KEY}&language=pt-BR&page=${page}`
   );
 
   return response.data.results;
 };
 
-export const getNowPlayingMovies = async (): Promise<TMovie[]> => {
+export const getNowPlayingMovies = async (page: number): Promise<TMovie[]> => {
   const response = await api.get(
-    `/movie/now_playing?api_key=${API_KEY}&language=pt-BR`
+    `/movie/now_playing?api_key=${API_KEY}&language=pt-BR&page=${page}`
   );
 
   return response.data.results;
 };
 
-export const getUpcomingMovies = async (): Promise<TMovie[]> => {
+export const getUpcomingMovies = async (page: number): Promise<TMovie[]> => {
   const response = await api.get(
-    `/movie/upcoming?api_key=${API_KEY}&language=pt-BR`
+    `/movie/upcoming?api_key=${API_KEY}&language=pt-BR&page=${page}`
   );
 
   return response.data.results;
