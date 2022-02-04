@@ -50,7 +50,7 @@ yarn/npm react-native bundle --platform android --dev false --entry-file index.j
 cd android
 
 - step 4
-get app.debug.apk in yourProject/android/app/build/outputs/apk/debug/app.debug.apk
+get app.debug.apk in moviesapp/android/app/build/outputs/apk/debug/app.debug.apk
 
 
 
