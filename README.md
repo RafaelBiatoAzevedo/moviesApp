@@ -28,6 +28,21 @@ Application created in React Native CLI that lists popular movies, ranked, playi
 
 https://developers.themoviedb.org/3/
 
+### Generate APK
+
+- step 1
+yarn android_clean
+
+- step 2
+yarn react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+- step 3
+cd android
+
+- step 4
+get app.debug.apk in yourProject/android/app/build/outputs/apk/debug/app.debug.apk
+
+
 ----------
 
 > This is a challenge by onBank
